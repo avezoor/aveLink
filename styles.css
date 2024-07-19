@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #0A4D68, #088395, #05BFDB, #00FFCA);
+    background-size: 400% 400%;
+    animation: GBAnimation 10s ease infinite;
+    color: #e0e0e0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #333; 
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.profile:hover img {
+    transform: scale(1.1); 
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.link-item {
+    margin-bottom: 20px;
+}
+
+.links h2 {
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #059212, #06D001, #9BEC00, #F3FF90);
+    background-size: 400% 400%;
+    border-radius: 15px;
+    transition: transform 0.2s, color 0.2s;
+    animation: GBAnimation 5s ease infinite;
+    margin-bottom: 20px;
+}
+
+.links a:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.links .link-item a {
+    justify-content: flex-start;
+}
+
+.links .link-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.links .link-item span {
+    flex: auto;
+    text-align: center;
+}
+
+@keyframes GBAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h2 {
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.2);
+}
