@@ -13,4 +13,4 @@ This repository contains the source code and assets for my personal **Linktree**
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/linktree.git
+   https://github.com/avezoor/aveLink.git
